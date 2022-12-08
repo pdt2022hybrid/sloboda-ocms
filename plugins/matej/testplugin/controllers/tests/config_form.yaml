@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Test
+
+# Model Form Field configuration
+form: $/matej/testplugin/models/test/fields.yaml
+
+# Model Class name
+modelClass: Matej\Testplugin\Models\Test
+
+# Default redirect location
+defaultRedirect: matej/testplugin/tests
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: matej/testplugin/tests/update/:id
+    redirectClose: matej/testplugin/tests
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: matej/testplugin/tests
+    redirectClose: matej/testplugin/tests
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

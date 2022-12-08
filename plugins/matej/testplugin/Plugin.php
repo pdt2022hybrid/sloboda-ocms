@@ -17,7 +17,7 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'Testplugin',
-            'description' => 'No description provided yet...',
+            'description' => 'description of plugin',
             'author'      => 'Matej',
             'icon'        => 'icon-leaf'
         ];
@@ -50,8 +50,6 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-        return []; // Remove this line to activate
-
         return [
             'Matej\Testplugin\Components\test' => 'test',
         ];
